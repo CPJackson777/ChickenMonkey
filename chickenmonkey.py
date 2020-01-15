@@ -3,13 +3,20 @@
 # For the multiples of seven (7, 14, 21, etc.) print "Monkey".
 # For numbers which are multiples of both five and seven print "ChickenMonkey".
 # To determine if a number can be evenly divided by 5 or 7, use the Python modulo operator.
-for i in range(1, 101):
-    if i % 5 == 0:
-        print("Chicken")
-    elif i % 7 == 0:
-        print("Monkey")
-    else:
-        print(i)
+
+def ChickenMonkey():
+
+    for i in range(1, 101):
+        if (i % 7 == 0) & (i % 5 == 0):
+            print("ChickenMonkey")
+        elif i % 5 == 0:
+            print("Chicken")
+        elif i % 7 == 0:
+            print("Monkey")
+        else:
+            print(i)
+
+ChickenMonkey()
      
     
 
